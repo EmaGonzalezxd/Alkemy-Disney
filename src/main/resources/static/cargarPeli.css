@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: #003049 !important;
+}
+
+.form{
+    background-color: #00517c;
+    width: 400px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.form .input-peli{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+
+.boton {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:none;
+    height:auto;    
+    width:auto;    
+    padding:10px;
+    color:#ffffff;    
+    background-color: #000000;    
+    border:none;    
+    border-radius:15px 15px 15px 15px;
+    transition:all 0.3s;
+    margin-left: 95px;
+    margin-top: 30px;
+  }
+
+  .boton:hover{
+    color:#ffffff;
+    background-color:#525252;
+    border:none;
+    border-radius:15px 15px 15px 15px;    
+  }
+  
+  .avatar{
+    border-radius: 50%;
+}
+
+ .navbar {
+    --bs-navbar-padding-y: 2.5rem;
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+  }
+  
+  .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    margin-right: -30px;
+}
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+    font-family: "Sen", sans-serif;
+  }
+  
+  .logo-container .logo {
+    margin-left:0;
+}
+
+.profile-text-container {
+    margin: -8px 300px;
+   
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: initial !important;
+    margin-top: 0.125rem;
+    margin-left: 87%;
+}
+
+.dropdown-toggle {
+    white-space: pre-wrap !important;
+}
+
+.logo-container .logo {
+    margin-left: -150px;
+}
+
+tbody, td, tfoot, th, thead, tr {
+    border-color: rgb(0, 0, 0) !important;
+    border-style: solid;
+    border-width: 0;
+    background-color: rgb(255, 255, 255);
+}

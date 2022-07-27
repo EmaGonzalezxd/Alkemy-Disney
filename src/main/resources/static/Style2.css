@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: #003049 !important;
+}
+
+.logo {
+    border-radius: 50%;
+}
+
+.h1, h1 {
+    font-size: 2.5rem;
+    padding-top: 30px;
+    font-family: cursive;
+}
+
+.navbar {
+    --bs-navbar-padding-y: 2.5rem;
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+    font-family: "Sen", sans-serif;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.menu-container {
+    flex: 6;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+}
+
+.menu-list-item {
+    margin-right: 30px;
+}
+
+.menu-list-item.active {
+    font-weight: bold;
+}
+.profile-container {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile-text-container {
+    margin: 0 20px;
+}
+
+.profile-picture {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.toggle {
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.toggle-icon {
+    color: goldenrod;
+}
+
+.toggle-ball {
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s ease all;
+}
+
+.sidebar {
+    width: 50px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.left-menu-icon {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.container {
+    background-color: #000000 !important;
+    width: 120px;
+    height: 450px;
+    margin-top: 150px;
+    max-width: 1290px !important;
+    border-radius: 15px;
+}
+
+.content-container {
+    width: 120px;
+    height: 500px;
+    gap: 20px;
+}
+
+.h3 {
+    font-size: 15px;
+    color: #ffffff !important;
+}
+
+.navbar-container.active {
+    background-color: white;
+
+    color: black;
+}
+
+.sidebar.active{
+    background-color: white;
+}
+
+.left-menu-icon.active{
+    color: black;
+}
+
+.toggle.active{
+    background-color: black;
+}
+
+.toggle-ball.active{
+    background-color: white;
+    transform: translateX(-20px);
+}
+
+
+@media only screen and (max-width: 940px){
+    .menu-container{
+        display: none;
+    }
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    margin-left: 950;
+    position: absolute;
+    top: 25;
+    margin-left: 900px;
+}
+
+/* BOTONES */
+
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: none;
+    height: 50px;
+    width: 140px;
+    padding: 17px;
+    color: #ffffff;
+    background-color: #124368;
+    border: none;
+    border-radius: 20px 20px 20px 20px;
+    transition: all 0.3s;
+    margin-top: auto;
+}
+
+.boton:hover {
+    color: #077dd8;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 20px 20px 20px 20px;
+}
+
+
+.paginacion {
+    position: static;
+    bottom: 0;
+    background: #100a1f;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.paginacion button {
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    background: #241744;
+    color: #fff;
+    border-radius: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+
+}
+
+.paginacion button:hover {
+    background: #dc3545;
+}
+
+[type="button"], [type="reset"], [type="submit"], button {
+    appearance: button;
+    padding: 10px;
+    background-color: #dc3545 !important;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    bottom: 20px;
+    left: 50px;
+}
+
+.overview {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: white;
+    opacity: .80;
+    text-align: center;
+    color: #000000;
+
+}
+
+.profile-text-container {
+    margin: -8px 300px;
+
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: initial !important;
+    margin-top: 0.125rem;
+}
+
+.dropdown-toggle {
+    white-space: pre-wrap !important;
+}
+
+p.user{
+    margin-top: -66px;
+    margin-bottom: 1rem;
+    margin-left: 100px;
+}
